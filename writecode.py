@@ -21,7 +21,7 @@ disp.show()
 
 img = Image.open("images/WriteCode.png")
 image = img.convert("1")
-print(image.format, image.size, image.mode)
+# print(image.format, image.size, image.mode)
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
