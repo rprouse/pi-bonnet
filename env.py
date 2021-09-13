@@ -1,4 +1,6 @@
 
+# Display Temperature, Pressure and Humidity
+
 # sudo pip3 install adafruit-circuitpython-ssd1305
 # sudo pip3 install adafruit-circuitpython-ms8607
 
@@ -63,8 +65,8 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Write three lines of text.
-    draw.text((x, top + 0), "Pressure: %.2f hPa" % sensor.pressure, font=font, fill=255)
-    draw.text((x, top + 12), "Temperature: %.2f C" % sensor.temperature, font=font, fill=255)
+    draw.text((x, top + 0), "Temperature: %.2f C" % sensor.temperature, font=font, fill=255)
+    draw.text((x, top + 12), "Pressure: %.2f hPa" % sensor.pressure, font=font, fill=255)
     draw.text((x, top + 24), "Humidity: %.2f %% rH" % sensor.relative_humidity, font=font, fill=255)
 
     # Display image.
